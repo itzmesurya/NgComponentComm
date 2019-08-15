@@ -1,1 +1,5 @@
-<p>banner works! with {{message}}</p>
+<p>banner works!</p>
+<div *ngIf="message">
+    <span><b>Below is the response from Card Component</b></span><br>
+    <span style="font-size: 16px; color:blue"> <b>{{message}}</b></span>
+</div>

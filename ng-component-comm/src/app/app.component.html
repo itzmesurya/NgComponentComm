@@ -19,12 +19,9 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul>
-<div *ngIf="response">
-  <span><b>Below is the response from Card Component</b></span><br>
-  <span style="font-size: 16px; color:blue"> <b>{{response}}</b></span>
-</div>
 
-<app-banner [message]="title"></app-banner>
+
+<app-banner [message]="response"></app-banner>
 <app-card [message]="title" (response)="onResponse($event)"></app-card>
 <router-outlet></router-outlet>
 </div>
