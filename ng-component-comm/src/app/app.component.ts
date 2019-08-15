@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-component-comm';
+  response:string;
+  onResponse(res:string) {
+    this.response = res;
+  }
 }
